@@ -1,0 +1,55 @@
+*
+  margin: 0
+  padding: 0
+
+body
+  background-color: #F0DB4F
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+#particles-js
+  width: 300px
+  height: 300px
+  z-index: 10
+  border-radius: 50%
+  box-shadow: -25px -25px 50px #FFFC5B, 25px 25px 50px #CCBA43
+  background-image: url("/img/logo.png")
+  background-position: center
+  background-size: cover
+  transition: 0.3s
+
+  &:active
+    box-shadow: none
+    transform: scale(0.98)
+
+  canvas
+    border-radius: 50%
+
+h2
+  margin-top: 40px
+  font-family: "Roboto", sans-serif
+  color: white
+  font-size: 30px
+  width: 90%
+  text-align: center
+
+nav
+  position: absolute
+  top: 20px
+  font-size: 20px
+  font-family: "Roboto", sans-serif
+  display: flex
+  justify-content: space-between
+  width: 220px
+
+  a
+    color: white
+    text-decoration: none
+    transition: 0.3s
+
+    &:hover
+      transform: scale(1.1)
