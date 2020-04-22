@@ -1,0 +1,30 @@
+{
+  "name": "jsteresina",
+  "version": "1.0.0",
+  "description": "Comunidade piauiense de JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/JSTeresina/jsteresina.github.io",
+  "author": "Sampaio Leal",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  },
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.7",
+    "gatsby": "^2.20.29",
+    "gatsby-plugin-catch-links": "^2.2.3",
+    "gatsby-plugin-react-helmet": "^3.2.4",
+    "gatsby-plugin-styled-components": "^3.2.3",
+    "gatsby-source-filesystem": "^2.2.4",
+    "gatsby-transformer-remark": "^2.7.4",
+    "lodash": "^4.17.15",
+    "minireset.css": "^0.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.0.0",
+    "styled-components": "^5.1.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
