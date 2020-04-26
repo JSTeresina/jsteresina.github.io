@@ -1,8 +1,8 @@
 import React from "react";
 import { StaticQuery, graphql, Link } from "gatsby";
-import { Header, HeaderTitle } from "./styles";
+import { HeaderTitle, HeaderBody } from "./styles";
 
-export default () => (
+const Header = () => (
   <StaticQuery
     query={graphql`
       query HeaderQuery {
@@ -22,3 +22,5 @@ export default () => (
     )}
   />
 );
+
+export default Header;

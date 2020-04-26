@@ -5,23 +5,19 @@ import SEO from "../components/SEO";
 import { Helmet } from "react-helmet";
 import GlobalStyles from "../styles/global";
 import Header from "../components/Header";
+import { graphql } from "gatsby";
+import styled from "styled-components";
 
-export default ({ data }) => (
+const Index = ({ data }) => (
   <div>
     <GlobalStyles />
-    <Helmet>
-      <meta name="description" content={config.siteDescription} />
-      <link rel="icon" href={favicon} />
-    </Helmet>
-    <Header title={title} />
-    <Presentation></Presentation>
-    <main role="main">
-      <Container>{children}</Container>
-    </main>
+
     <SEO />
     <Posts data={data} />
   </div>
 );
+
+export default Index;
 
 const Presentation = styled.div`
   width: 100vw;

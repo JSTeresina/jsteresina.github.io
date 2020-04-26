@@ -1,7 +1,7 @@
 import React from "react";
 import { Post, Title, Date, Posts } from "./styles";
 
-export default ({ data }) => {
+const PostList = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
   const posts = edges.map(({ node }) => (
     <Post key={node.fields.slug}>
@@ -14,3 +14,5 @@ export default ({ data }) => {
   ));
   return <Posts>{posts}</Posts>;
 };
+
+export default PostList;

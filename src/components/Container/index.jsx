@@ -1,9 +1,10 @@
 import React from "react";
-import "./Container.css";
+import styled from "styled-components";
 
-export default ({ children }) => <Container>{children}</Container>;
+const Container = ({ children }) => <Div>{children}</Div>;
+export default Container;
 
-const Container = styled.div`
+const Div = styled.div`
   max-width: 980px;
   display: flex;
   justify-content: space-between;
