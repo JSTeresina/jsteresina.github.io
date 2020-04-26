@@ -1,29 +1,21 @@
-import React from "react";
-import "minireset.css";
+import React, { Component } from "react";
+import { graphql } from "gatsby";
+import Layout from "../components/Layout";
 import Posts from "../components/Posts";
 import SEO from "../components/SEO";
-import { Helmet } from "react-helmet";
-import GlobalStyles from "../styles/global";
-import Header from "../components/Header";
-import { graphql } from "gatsby";
-import styled from "styled-components";
+import "minireset.css";
 
-const Index = ({ data }) => (
-  <div>
-    <GlobalStyles />
-
-    <SEO />
-    <Posts data={data} />
-  </div>
-);
-
-export default Index;
-
-const Presentation = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: #f0db4f;
-`;
+export default class Index extends Component {
+  render() {
+    const { data } = this.props;
+    return (
+      <Layout>
+        <SEO />
+        <Posts data={data} />
+      </Layout>
+    );
+  }
+}
 
 export const pageQuery = graphql`
   query {
@@ -37,7 +29,6 @@ export const pageQuery = graphql`
           fields {
             slug
           }
-          timeToRead
           frontmatter {
             title
             tags

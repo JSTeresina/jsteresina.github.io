@@ -1,37 +1,37 @@
 {
   "name": "jsteresina",
+  "description": "Blog da comunidade piauiense de JavaScript",
   "version": "1.0.0",
-  "description": "Comunidade piauiense de JavaScript",
-  "main": "index.js",
-  "repository": "https://github.com/JSTeresina/jsteresina.github.io",
-  "author": "Sampaio Leal",
+  "author": "Sampaio Leal <samp14hd@gmail.com>",
   "license": "MIT",
+  "main": "n/a",
   "scripts": {
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "dev": "gatsby develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build"
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.7",
-    "gatsby": "^2.20.29",
-    "gatsby-plugin-catch-links": "^2.2.3",
-    "gatsby-plugin-feed": "^2.4.4",
-    "gatsby-plugin-google-analytics": "^2.2.5",
-    "gatsby-plugin-manifest": "^2.3.7",
-    "gatsby-plugin-offline": "^3.1.5",
-    "gatsby-plugin-react-helmet": "^3.2.4",
-    "gatsby-plugin-sitemap": "^2.3.6",
-    "gatsby-plugin-styled-components": "^3.2.3",
-    "gatsby-source-filesystem": "^2.2.4",
-    "gatsby-transformer-remark": "^2.7.4",
-    "lodash": "^4.17.15",
-    "minireset.css": "^0.0.6",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.0.0",
+    "gatsby": "^2.1.13",
+    "gatsby-plugin-catch-links": "^2.0.11",
+    "gatsby-plugin-feed": "^2.0.15",
+    "gatsby-plugin-google-analytics": "^2.0.17",
+    "gatsby-plugin-manifest": "^2.0.24",
+    "gatsby-plugin-offline": "^2.0.25",
+    "gatsby-plugin-react-helmet": "^3.0.9",
+    "gatsby-plugin-sitemap": "^2.0.10",
+    "gatsby-plugin-styled-components": "^3.2.4",
+    "gatsby-source-filesystem": "^2.0.21",
+    "gatsby-transformer-remark": "^2.2.5",
+    "lodash": "^4.17.13",
+    "minireset.css": "^0.0.4",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2",
+    "react-helmet": "^5.2.0",
     "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.19.0",
-    "gh-pages": "^2.2.0"
+    "eslint-plugin-react": "^7.19.0"
   }
 }

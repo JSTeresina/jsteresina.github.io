@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 Disallow: /404
 
-sitemap: https://jsteresina.github.io/sitemap.xml
+sitemap: https://codestackbrasil.netlify.com/sitemap.xml

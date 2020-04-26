@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import config from "../../../data/config";
+import config from "../../data/config";
 
 const SEO = ({ title, description, url, article }) => {
   const seo = {
@@ -11,7 +11,7 @@ const SEO = ({ title, description, url, article }) => {
   };
 
   return (
-    <React.Fragment>
+    <>
       <Helmet title={seo.title}>
         <meta name="description" content={seo.description} />
         <meta name="image" content={seo.image} />
@@ -33,8 +33,7 @@ const SEO = ({ title, description, url, article }) => {
         )}
         {seo.image && <meta name="twitter:image" content={seo.image} />}
       </Helmet>
-    </React.Fragment>
+    </>
   );
 };
-
 export default SEO;

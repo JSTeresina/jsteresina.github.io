@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import _ from "lodash";
-import Layout from "../components/Layout";
 import SEO from "../components/SEO";
+import Layout from "../components/Layout";
 
 export default class Post extends Component {
   render() {
